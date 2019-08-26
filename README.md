@@ -1,68 +1,103 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<p align="center">
+  <h3 align="center">recepies-detail-app</h3>
+</p>
+  <p align="center">
+    ReactJS application which shows the list of recipes and details.
+    <br />
+    </p>
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+* [About the Project](#about-the-project)
+  * [Built With](#built-with)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+* [Usage](#usage)
+* [Contact](#Contact)
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## About The Project
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+![Demo](https://github.com/TanveerAliS/recepies-detail-app/blob/master/recepies-detail-app.gif)
 
-### `npm test`
+I have used [create-react-app](https://github.com/facebook/create-react-app) (react hooks) and [Marley Spoon](https://marleyspoon.com) API's to develop this application. The purpose of the application is to correctly render the data from API as a list and also the details about the individual list item.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Built With
+This applicaiton has been devleoped with help of following stack
+* [Font Awesome](https://fontawesome.com/)
+* [Axios](https://github.com/axios/axios)
+* [Node-sass](https://www.npmjs.com/package/node-sass)
+* [React hooks](https://reactjs.org/docs/hooks-intro.html)
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+In order to quick started with this application follow as below,
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+```sh
+npx create-react-app recepies-detail-app
+cd recepies-detail-app
+npm start
+```
+Then open http://localhost:8000/ to see your app.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+Required software and how to install.
+* npm
+```sh
+npm install npm@latest -g
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Installation
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repo
+```sh
+git clone https://github.com/TanveerAliS/recepies-detail-app.git
+```
+2. Go to dir and Install NPM packages then start
+```sh
+cd recepies-detail-app
+npm install
+npm start
+```
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+├── .gitignore                      <- Files that should be ignored by git. 
+├── README.md                       <- The top-level README for this project.
+├── package.json                    <- This file contains all the devDependencies, dependencies and scripts to run app.
+├── package-lock.json               <- It stores an exact, versioned dependency tree rather than using starred versioning like |                                      package.json itself      
+└── src
+    ├── actions                     <- Payloads of information that send data from application to store.
+    ├── components                  <- Different genric componenent used for this app
+    |   ├── Button                  
+    |   ├── Card                    
+    |   ├── CardBody                
+    |   ├── CardDetails            
+    |   ├── Cardheader              
+    |   └── Title                   
+    ├── Constans                    <- Constants which are used in this app
+    ├── containers                  
+    |   ├── RecipeDetails           <- Display the Details about the selected recipe
+    |   ├── Recpies                 <- Display the list of all recipes
+    ├── middlewares                 <- Handles action in the Async Actions
+    ├── mockdata                    <- Mock data for testing and development
+    ├── reducers                    <- Handle the multiple reducer function for application 
+    ├── services                    <- Handle the fetch call
+    ├── store                       <- A store holds the whole state tree of your application
+    ├── index.js                    <- Init and place app in document
+    ├── index.scss                  <- Created single style sheet for simplicty
+    ├── Routes                      <- Handle the routing of application 
+    └── Utils                       <- Simple function to get recipes details
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+In this application, we fetching the data from Marley Spoon's APT to get the different recipes and display list with details view.
 
-## Learn More
+It will render loading component while application fetching data from API.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This application is fully accessible with tabs and screen readers.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contact
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Your Name - [@TanveerAli_S](https://twitter.com/TanveerAli_S)
