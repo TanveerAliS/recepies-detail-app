@@ -28,6 +28,7 @@ This applicaiton has been devleoped with help of following stack
 * [Font Awesome](https://fontawesome.com/)
 * [Axios](https://github.com/axios/axios)
 * [Node-sass](https://www.npmjs.com/package/node-sass)
+* [Redux](https://redux.js.org)
 * [React hooks](https://reactjs.org/docs/hooks-intro.html)
 
 ## Getting Started
