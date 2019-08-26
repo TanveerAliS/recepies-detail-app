@@ -1,6 +1,6 @@
 
 <p align="center">
-  <h3 align="center">recepies-detail-app</h3>
+  <h3 align="center">recipes-detail-app</h3>
 </p>
   <p align="center">
     ReactJS application which shows the list of recipes and details.
@@ -19,7 +19,7 @@
 
 ## About The Project
 
-![Demo](https://github.com/TanveerAliS/recepies-detail-app/blob/master/recepies-detail-app.gif)
+![Demo](https://github.com/TanveerAliS/recipes-detail-app/blob/master/recipes-detail-app.gif)
 
 I have used [create-react-app](https://github.com/facebook/create-react-app) (react hooks) and [Marley Spoon](https://marleyspoon.com) API's to develop this application. The purpose of the application is to correctly render the data from API as a list and also the details about the individual list item.
 
@@ -36,8 +36,8 @@ This applicaiton has been devleoped with help of following stack
 In order to quick started with this application follow as below,
 
 ```sh
-npx create-react-app recepies-detail-app
-cd recepies-detail-app
+npx create-react-app recipes-detail-app
+cd recipes-detail-app
 npm start
 ```
 Then open http://localhost:8000/ to see your app.
@@ -54,11 +54,11 @@ npm install npm@latest -g
 
 1. Clone the repo
 ```sh
-git clone https://github.com/TanveerAliS/recepies-detail-app.git
+git clone https://github.com/TanveerAliS/recipes-detail-app.git
 ```
 2. Go to dir and Install NPM packages then start
 ```sh
-cd recepies-detail-app
+cd recipes-detail-app
 npm install
 npm start
 ```
